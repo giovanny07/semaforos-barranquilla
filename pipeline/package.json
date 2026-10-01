@@ -1,0 +1,28 @@
+{
+  "name": "@semaforos/pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenStreetMap + datos.gov.co → calles, semáforos, cruces y prioridades (data/out, web/public/data).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "fetch": "tsx src/fetch.ts",
+    "build": "tsx src/build.ts",
+    "copy": "tsx src/copy.ts",
+    "verify": "tsx src/verify.ts",
+    "data": "tsx src/build.ts && tsx src/copy.ts && tsx src/verify.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "kdbush": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

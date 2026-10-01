@@ -1,0 +1,36 @@
+name: Idea o mejora / Idea or feature
+description: Propón algo nuevo para el mapa, los datos o la metodología. / Suggest something new for the map, the data or the method.
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de escribir, mira si ya hay un *issue* parecido y revisa la hoja de ruta en el README.
+
+        *English is fine too.*
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué problema resuelve? / What problem does it solve?
+      description: ¿Quién lo necesita y para qué? (una persona que camina, alguien de la Secretaría de Tránsito, un periodista, un desarrollador...) / Who needs it, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta / Proposal
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas que consideraste / Alternatives you considered
+  - type: dropdown
+    id: ayuda
+    attributes:
+      label: ¿Te gustaría trabajar en esto? / Would you like to work on it?
+      options:
+        - Sí, puedo hacer un PR / Yes, I can open a PR
+        - Puedo ayudar con datos o pruebas / I can help with data or testing
+        - Solo la propongo / Just suggesting it

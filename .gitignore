@@ -1,0 +1,47 @@
+# --- secrets (only the .env.example templates are committed) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# --- dependencies and build output ---
+node_modules/
+.next/
+# anchored: a bare "out/" would also ignore data/out/
+/web/out/
+coverage/
+.turbo/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# --- generated or copied at build time ---
+web/public/maplibre/
+
+# --- pipeline intermediate (rebuilt by `pnpm data`; it is the input of the optional scorer backtest) ---
+data/out/backtest-input.json
+
+# --- optional paid scorer: raw model answers and spend log stay local ---
+scorer-jev/cache/
+
+# --- local-only and internal material ---
+.claude/
+share-plan/
+web/sim-audit/
+CONTRACT.md
+jev-learnings.md
+*.kmz
+
+# --- OS, editor, logs, media dumps ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.log
+npm-debug.log*
+pnpm-debug.log*
+*.mp4
+*.mov

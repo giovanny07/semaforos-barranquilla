@@ -1,0 +1,53 @@
+name: Error en el sitio o el código / Bug
+description: Algo no funciona en el mapa, en los scripts o en la documentación. / Something is broken in the map, the scripts or the docs.
+title: "[Error] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Si el problema es un dato (un semáforo o un cruce equivocado), usa mejor el formulario **Corrección de datos**.
+        Si es un problema de seguridad, **no lo publiques aquí**: sigue [SECURITY.md](https://github.com/Victorpay1/semaforos-barranquilla/blob/main/SECURITY.md).
+
+        *English is fine too.*
+  - type: textarea
+    id: que-paso
+    attributes:
+      label: ¿Qué pasó? / What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo / Steps to reproduce
+      placeholder: |
+        1. Abrí el mapa en el celular
+        2. Toqué el cruce ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: ¿Qué esperabas? / What did you expect?
+  - type: dropdown
+    id: donde
+    attributes:
+      label: ¿Dónde? / Where?
+      options:
+        - Celular, navegador de Instagram / Phone, Instagram in-app browser
+        - Celular, otro navegador / Phone, other browser
+        - Computador / Computer
+        - Al correr el código (pnpm ...) / Running the code (pnpm ...)
+    validations:
+      required: true
+  - type: input
+    id: navegador
+    attributes:
+      label: Navegador y sistema / Browser and OS
+      placeholder: "Safari en iOS 19, Chrome 140 en Android, Node 24.x en macOS..."
+  - type: textarea
+    id: capturas
+    attributes:
+      label: Capturas o registros / Screenshots or logs
+      description: Puedes arrastrar imágenes aquí. Si pegas registros, revisa que no tengan llaves ni rutas personales. / Drag images here. If you paste logs, make sure they contain no keys or personal paths.

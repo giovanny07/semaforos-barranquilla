@@ -1,0 +1,61 @@
+name: Adaptar a mi ciudad / Adapt it to my city
+description: Quieres hacer este mapa para otra ciudad o municipio. / You want to build this map for another city or town.
+title: "[Ciudad] "
+labels: ["nueva ciudad"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Qué bueno. Primero lee la guía [Adapta el proyecto a tu ciudad](https://github.com/Victorpay1/semaforos-barranquilla/blob/main/docs/adapta-tu-ciudad.md). Cuéntanos qué tienes.
+
+        Recuerda que el nombre «Semáforos de Barranquilla» no se licencia: ponle otro nombre a tu versión (ver [TRADEMARKS.md](https://github.com/Victorpay1/semaforos-barranquilla/blob/main/TRADEMARKS.md)).
+
+        *English is fine too.*
+  - type: input
+    id: ciudad
+    attributes:
+      label: Ciudad o municipio, y país / City or town, and country
+      placeholder: "Soledad, Atlántico, Colombia"
+    validations:
+      required: true
+  - type: dropdown
+    id: quien
+    attributes:
+      label: ¿Desde dónde lo haces? / Who are you doing it as?
+      options:
+        - Por mi cuenta / On my own
+        - Colectivo ciudadano, universidad u ONG / Civic group, university or NGO
+        - Entidad pública / Public entity
+        - Empresa / Company
+        - Otro / Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: datos
+    attributes:
+      label: ¿Qué datos hay para tu ciudad? / What data exists for your city?
+      description: Marca lo que sepas. Si no sabes, no pasa nada. / Tick what you know. It's fine not to know.
+      options:
+        - label: Inventario oficial de semáforos (con ubicación) / Official signal inventory (with locations)
+        - label: Registros de siniestros viales, con coordenadas / Crash records with coordinates
+        - label: Registros de siniestros viales, solo con dirección escrita / Crash records with written addresses only
+        - label: Aforos (conteos de tránsito) / Traffic counts
+        - label: OpenStreetMap tiene bien mapeadas las calles y los semáforos / OpenStreetMap has good street and signal coverage
+  - type: textarea
+    id: enlaces
+    attributes:
+      label: Enlaces a esos datos y sus licencias / Links to that data and its licenses
+      description: Por ejemplo, el portal de datos abiertos de la ciudad. / For example, the city's open-data portal.
+  - type: dropdown
+    id: llave
+    attributes:
+      label: ¿Tienes llave de la API de TypeSafe para la evaluación? / Do you have a TypeSafe API key for scoring?
+      description: No es obligatoria para empezar; sin ella hoy la lista de candidatos sale vacía (ver la guía). / Not required to start; without it the candidate list is empty today (see the guide).
+      options:
+        - Sí / Yes
+        - "No"
+        - No sé qué es / Not sure what that is
+  - type: textarea
+    id: ayuda
+    attributes:
+      label: ¿En qué te podemos ayudar? / How can we help?

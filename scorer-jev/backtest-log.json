@@ -1,0 +1,1322 @@
+[
+ {
+  "variant": "v2",
+  "note": "baseline: original questions/state, counterfactual distance",
+  "questionHash": "3d983ed5890b5618",
+  "model": "jev-latest",
+  "at": "2026-09-21T02:30:37.924Z",
+  "scored": 734,
+  "missing": 0,
+  "tune": {
+   "signalized": {
+    "n": 161,
+    "needAltaOrCritica": 5.6,
+    "needMediaOrMore": 67.1,
+    "warrantGe": {
+     "0.1": 55.9,
+     "0.2": 12.4,
+     "0.3": 8.7,
+     "0.4": 5,
+     "0.5": 1.2,
+     "0.6": 0.6,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 9.3,
+     "0.2": 6.8,
+     "0.3": 5.6,
+     "0.4": 4.3,
+     "0.5": 1.2,
+     "0.6": 0.6,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 9.3,
+    "controls": {
+     "ninguna intervención": 71.4,
+     "señal de PARE / ceda el paso": 14.3,
+     "reductores de velocidad": 1.2,
+     "semáforo peatonal": 5,
+     "semáforo vehicular": 4.3,
+     "glorieta": 3.7
+    },
+    "meanWarrantProb": 0.135
+   },
+   "quiet": {
+    "n": 211,
+    "needAltaOrCritica": 0,
+    "needMediaOrMore": 0,
+    "warrantGe": {
+     "0.1": 17.1,
+     "0.2": 0,
+     "0.3": 0,
+     "0.4": 0,
+     "0.5": 0,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 0,
+     "0.2": 0,
+     "0.3": 0,
+     "0.4": 0,
+     "0.5": 0,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 0,
+    "controls": {
+     "reductores de velocidad": 37.4,
+     "ninguna intervención": 55.5,
+     "señal de PARE / ceda el paso": 4.3,
+     "glorieta": 2.8
+    },
+    "meanWarrantProb": 0.068
+   },
+   "roc": [
+    {
+     "threshold": 0.1,
+     "recallSignalized": 9.3,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 55.9,
+     "falseAlarmWarrantOnly": 17.1
+    },
+    {
+     "threshold": 0.2,
+     "recallSignalized": 6.8,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 12.4,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.3,
+     "recallSignalized": 5.6,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 8.7,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.4,
+     "recallSignalized": 4.3,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 5,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.5,
+     "recallSignalized": 1.2,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 1.2,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.6,
+     "recallSignalized": 0.6,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0.6,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.7,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.8,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.9,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    }
+   ],
+   "auc": 0.796
+  },
+  "holdout": {
+   "signalized": {
+    "n": 173,
+    "needAltaOrCritica": 8.7,
+    "needMediaOrMore": 61.3,
+    "warrantGe": {
+     "0.1": 49.1,
+     "0.2": 12.7,
+     "0.3": 8.1,
+     "0.4": 4.6,
+     "0.5": 2.9,
+     "0.6": 1.7,
+     "0.7": 0.6,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 9.2,
+     "0.2": 7.5,
+     "0.3": 5.8,
+     "0.4": 4.6,
+     "0.5": 2.9,
+     "0.6": 1.7,
+     "0.7": 0.6,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 9.2,
+    "controls": {
+     "ninguna intervención": 72.3,
+     "semáforo vehicular": 5.2,
+     "reductores de velocidad": 0.6,
+     "señal de PARE / ceda el paso": 14.5,
+     "semáforo peatonal": 4,
+     "glorieta": 3.5
+    },
+    "meanWarrantProb": 0.133
+   },
+   "quiet": {
+    "n": 189,
+    "needAltaOrCritica": 0,
+    "needMediaOrMore": 0,
+    "warrantGe": {
+     "0.1": 18.5,
+     "0.2": 0,
+     "0.3": 0,
+     "0.4": 0,
+     "0.5": 0,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 0,
+     "0.2": 0,
+     "0.3": 0,
+     "0.4": 0,
+     "0.5": 0,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 0,
+    "controls": {
+     "ninguna intervención": 55.6,
+     "señal de PARE / ceda el paso": 3.7,
+     "glorieta": 1.6,
+     "reductores de velocidad": 39.2
+    },
+    "meanWarrantProb": 0.07
+   },
+   "roc": [
+    {
+     "threshold": 0.1,
+     "recallSignalized": 9.2,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 49.1,
+     "falseAlarmWarrantOnly": 18.5
+    },
+    {
+     "threshold": 0.2,
+     "recallSignalized": 7.5,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 12.7,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.3,
+     "recallSignalized": 5.8,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 8.1,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.4,
+     "recallSignalized": 4.6,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 4.6,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.5,
+     "recallSignalized": 2.9,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 2.9,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.6,
+     "recallSignalized": 1.7,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 1.7,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.7,
+     "recallSignalized": 0.6,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0.6,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.8,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.9,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    }
+   ],
+   "auc": 0.751
+  },
+  "signalizedByClassPair": {
+   "tertiary×residential": {
+    "n": 70,
+    "hit50": 0
+   },
+   "tertiary×tertiary": {
+    "n": 59,
+    "hit50": 0
+   },
+   "secondary×tertiary": {
+    "n": 49,
+    "hit50": 3
+   },
+   "secondary×residential": {
+    "n": 35,
+    "hit50": 0
+   },
+   "primary×tertiary": {
+    "n": 27,
+    "hit50": 1
+   },
+   "primary×residential": {
+    "n": 23,
+    "hit50": 0
+   },
+   "secondary×secondary": {
+    "n": 19,
+    "hit50": 0
+   },
+   "trunk×tertiary": {
+    "n": 16,
+    "hit50": 3
+   },
+   "residential×residential": {
+    "n": 15,
+    "hit50": 0
+   },
+   "primary×secondary": {
+    "n": 5,
+    "hit50": 0
+   },
+   "trunk×residential": {
+    "n": 5,
+    "hit50": 0
+   },
+   "primary×primary": {
+    "n": 3,
+    "hit50": 0
+   },
+   "trunk×secondary": {
+    "n": 2,
+    "hit50": 0
+   },
+   "trunk×primary": {
+    "n": 2,
+    "hit50": 0
+   },
+   "tertiary×null": {
+    "n": 1,
+    "hit50": 0
+   },
+   "primary×unclassified": {
+    "n": 1,
+    "hit50": 0
+   },
+   "tertiary×unclassified": {
+    "n": 1,
+    "hit50": 0
+   },
+   "trunk×trunk": {
+    "n": 1,
+    "hit50": 0
+   }
+  }
+ },
+ {
+  "variant": "v3",
+  "note": "v3: major/cross classes, along-road distance, crash bucket as exposure, spacing corrected to city practice",
+  "questionHash": "021e03d5e07e19e0",
+  "model": "jev-latest",
+  "at": "2026-09-21T02:48:03.601Z",
+  "scored": 1059,
+  "missing": 0,
+  "tune": {
+   "signalized": {
+    "n": 161,
+    "needAltaOrCritica": 75.8,
+    "needMediaOrMore": 83.9,
+    "warrantGe": {
+     "0.1": 94.4,
+     "0.2": 86.3,
+     "0.3": 82.6,
+     "0.4": 78.9,
+     "0.5": 77,
+     "0.6": 73.3,
+     "0.7": 68.9,
+     "0.8": 55.9,
+     "0.9": 6.2
+    },
+    "signalAndWarrantGe": {
+     "0.1": 78.3,
+     "0.2": 78.3,
+     "0.3": 78.3,
+     "0.4": 77.6,
+     "0.5": 77,
+     "0.6": 73.3,
+     "0.7": 68.9,
+     "0.8": 55.9,
+     "0.9": 6.2
+    },
+    "controlSignal": 78.3,
+    "controls": {
+     "semáforo vehicular": 78.3,
+     "señal de PARE / ceda el paso": 9.3,
+     "ninguna intervención": 12.4
+    },
+    "meanWarrantProb": 0.668
+   },
+   "quiet": {
+    "n": 211,
+    "needAltaOrCritica": 3.8,
+    "needMediaOrMore": 5.2,
+    "warrantGe": {
+     "0.1": 39.8,
+     "0.2": 8.1,
+     "0.3": 6.2,
+     "0.4": 4.3,
+     "0.5": 3.3,
+     "0.6": 1.4,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 5.2,
+     "0.2": 4.7,
+     "0.3": 4.7,
+     "0.4": 4.3,
+     "0.5": 3.3,
+     "0.6": 1.4,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 5.2,
+    "controls": {
+     "ninguna intervención": 41.2,
+     "señal de PARE / ceda el paso": 42.2,
+     "reductores de velocidad": 10,
+     "semáforo vehicular": 5.2,
+     "glorieta": 1.4
+    },
+    "meanWarrantProb": 0.119
+   },
+   "comparable": {
+    "n": 135,
+    "needAltaOrCritica": 19.3,
+    "needMediaOrMore": 37,
+    "warrantGe": {
+     "0.1": 88.9,
+     "0.2": 46.7,
+     "0.3": 35.6,
+     "0.4": 33.3,
+     "0.5": 28.1,
+     "0.6": 21.5,
+     "0.7": 19.3,
+     "0.8": 10.4,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 29.6,
+     "0.2": 29.6,
+     "0.3": 29.6,
+     "0.4": 29.6,
+     "0.5": 27.4,
+     "0.6": 21.5,
+     "0.7": 19.3,
+     "0.8": 10.4,
+     "0.9": 0
+    },
+    "controlSignal": 29.6,
+    "controls": {
+     "señal de PARE / ceda el paso": 55.6,
+     "ninguna intervención": 14.1,
+     "glorieta": 0.7,
+     "semáforo vehicular": 29.6
+    },
+    "meanWarrantProb": 0.331
+   },
+   "roc": [
+    {
+     "threshold": 0.1,
+     "recallSignalized": 78.3,
+     "falseAlarmQuiet": 5.2,
+     "flaggedComparable": 29.6,
+     "recallWarrantOnly": 94.4,
+     "falseAlarmWarrantOnly": 39.8
+    },
+    {
+     "threshold": 0.2,
+     "recallSignalized": 78.3,
+     "falseAlarmQuiet": 4.7,
+     "flaggedComparable": 29.6,
+     "recallWarrantOnly": 86.3,
+     "falseAlarmWarrantOnly": 8.1
+    },
+    {
+     "threshold": 0.3,
+     "recallSignalized": 78.3,
+     "falseAlarmQuiet": 4.7,
+     "flaggedComparable": 29.6,
+     "recallWarrantOnly": 82.6,
+     "falseAlarmWarrantOnly": 6.2
+    },
+    {
+     "threshold": 0.4,
+     "recallSignalized": 77.6,
+     "falseAlarmQuiet": 4.3,
+     "flaggedComparable": 29.6,
+     "recallWarrantOnly": 78.9,
+     "falseAlarmWarrantOnly": 4.3
+    },
+    {
+     "threshold": 0.5,
+     "recallSignalized": 77,
+     "falseAlarmQuiet": 3.3,
+     "flaggedComparable": 27.4,
+     "recallWarrantOnly": 77,
+     "falseAlarmWarrantOnly": 3.3
+    },
+    {
+     "threshold": 0.6,
+     "recallSignalized": 73.3,
+     "falseAlarmQuiet": 1.4,
+     "flaggedComparable": 21.5,
+     "recallWarrantOnly": 73.3,
+     "falseAlarmWarrantOnly": 1.4
+    },
+    {
+     "threshold": 0.7,
+     "recallSignalized": 68.9,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 19.3,
+     "recallWarrantOnly": 68.9,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.8,
+     "recallSignalized": 55.9,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 10.4,
+     "recallWarrantOnly": 55.9,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.9,
+     "recallSignalized": 6.2,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 0,
+     "recallWarrantOnly": 6.2,
+     "falseAlarmWarrantOnly": 0
+    }
+   ],
+   "auc": 0.94
+  },
+  "holdout": {
+   "signalized": {
+    "n": 173,
+    "needAltaOrCritica": 76.9,
+    "needMediaOrMore": 84.4,
+    "warrantGe": {
+     "0.1": 95.4,
+     "0.2": 86.7,
+     "0.3": 85,
+     "0.4": 81.5,
+     "0.5": 79.2,
+     "0.6": 75.1,
+     "0.7": 68.8,
+     "0.8": 56.1,
+     "0.9": 9.8
+    },
+    "signalAndWarrantGe": {
+     "0.1": 83.2,
+     "0.2": 83.2,
+     "0.3": 83.2,
+     "0.4": 80.9,
+     "0.5": 79.2,
+     "0.6": 75.1,
+     "0.7": 68.8,
+     "0.8": 56.1,
+     "0.9": 9.8
+    },
+    "controlSignal": 83.2,
+    "controls": {
+     "semáforo vehicular": 82.7,
+     "ninguna intervención": 12.7,
+     "señal de PARE / ceda el paso": 4,
+     "semáforo peatonal": 0.6
+    },
+    "meanWarrantProb": 0.68
+   },
+   "quiet": {
+    "n": 189,
+    "needAltaOrCritica": 1.1,
+    "needMediaOrMore": 2.1,
+    "warrantGe": {
+     "0.1": 40.7,
+     "0.2": 5.8,
+     "0.3": 1.6,
+     "0.4": 1.6,
+     "0.5": 1.1,
+     "0.6": 0.5,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 1.6,
+     "0.2": 1.6,
+     "0.3": 1.1,
+     "0.4": 1.1,
+     "0.5": 1.1,
+     "0.6": 0.5,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 1.6,
+    "controls": {
+     "ninguna intervención": 40.7,
+     "señal de PARE / ceda el paso": 48.1,
+     "reductores de velocidad": 9,
+     "semáforo vehicular": 1.1,
+     "semáforo peatonal": 0.5,
+     "glorieta": 0.5
+    },
+    "meanWarrantProb": 0.105
+   },
+   "comparable": {
+    "n": 165,
+    "needAltaOrCritica": 18.8,
+    "needMediaOrMore": 32.1,
+    "warrantGe": {
+     "0.1": 87.9,
+     "0.2": 46.1,
+     "0.3": 32.1,
+     "0.4": 24.2,
+     "0.5": 19.4,
+     "0.6": 18.8,
+     "0.7": 18.2,
+     "0.8": 9.7,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 23,
+     "0.2": 23,
+     "0.3": 21.8,
+     "0.4": 21.2,
+     "0.5": 18.8,
+     "0.6": 18.8,
+     "0.7": 18.2,
+     "0.8": 9.7,
+     "0.9": 0
+    },
+    "controlSignal": 23,
+    "controls": {
+     "señal de PARE / ceda el paso": 62.4,
+     "semáforo vehicular": 21.8,
+     "ninguna intervención": 13.3,
+     "glorieta": 1.2,
+     "semáforo peatonal": 1.2
+    },
+    "meanWarrantProb": 0.3
+   },
+   "osmOnlySignalized": {
+    "n": 25,
+    "needAltaOrCritica": 64,
+    "needMediaOrMore": 80,
+    "warrantGe": {
+     "0.1": 92,
+     "0.2": 80,
+     "0.3": 76,
+     "0.4": 72,
+     "0.5": 68,
+     "0.6": 68,
+     "0.7": 60,
+     "0.8": 48,
+     "0.9": 4
+    },
+    "signalAndWarrantGe": {
+     "0.1": 68,
+     "0.2": 68,
+     "0.3": 68,
+     "0.4": 68,
+     "0.5": 68,
+     "0.6": 68,
+     "0.7": 60,
+     "0.8": 48,
+     "0.9": 4
+    },
+    "controlSignal": 68,
+    "controls": {
+     "semáforo vehicular": 68,
+     "ninguna intervención": 16,
+     "señal de PARE / ceda el paso": 16
+    },
+    "meanWarrantProb": 0.608
+   },
+   "roc": [
+    {
+     "threshold": 0.1,
+     "recallSignalized": 83.2,
+     "falseAlarmQuiet": 1.6,
+     "flaggedComparable": 23,
+     "recallWarrantOnly": 95.4,
+     "falseAlarmWarrantOnly": 40.7
+    },
+    {
+     "threshold": 0.2,
+     "recallSignalized": 83.2,
+     "falseAlarmQuiet": 1.6,
+     "flaggedComparable": 23,
+     "recallWarrantOnly": 86.7,
+     "falseAlarmWarrantOnly": 5.8
+    },
+    {
+     "threshold": 0.3,
+     "recallSignalized": 83.2,
+     "falseAlarmQuiet": 1.1,
+     "flaggedComparable": 21.8,
+     "recallWarrantOnly": 85,
+     "falseAlarmWarrantOnly": 1.6
+    },
+    {
+     "threshold": 0.4,
+     "recallSignalized": 80.9,
+     "falseAlarmQuiet": 1.1,
+     "flaggedComparable": 21.2,
+     "recallWarrantOnly": 81.5,
+     "falseAlarmWarrantOnly": 1.6
+    },
+    {
+     "threshold": 0.5,
+     "recallSignalized": 79.2,
+     "falseAlarmQuiet": 1.1,
+     "flaggedComparable": 18.8,
+     "recallWarrantOnly": 79.2,
+     "falseAlarmWarrantOnly": 1.1
+    },
+    {
+     "threshold": 0.6,
+     "recallSignalized": 75.1,
+     "falseAlarmQuiet": 0.5,
+     "flaggedComparable": 18.8,
+     "recallWarrantOnly": 75.1,
+     "falseAlarmWarrantOnly": 0.5
+    },
+    {
+     "threshold": 0.7,
+     "recallSignalized": 68.8,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 18.2,
+     "recallWarrantOnly": 68.8,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.8,
+     "recallSignalized": 56.1,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 9.7,
+     "recallWarrantOnly": 56.1,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.9,
+     "recallSignalized": 9.8,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 0,
+     "recallWarrantOnly": 9.8,
+     "falseAlarmWarrantOnly": 0
+    }
+   ],
+   "auc": 0.948
+  },
+  "signalizedByClassPair": {
+   "tertiary×residential": {
+    "n": 32,
+    "hit50": 22
+   },
+   "tertiary×tertiary": {
+    "n": 30,
+    "hit50": 26
+   },
+   "secondary×tertiary": {
+    "n": 26,
+    "hit50": 25
+   },
+   "secondary×residential": {
+    "n": 22,
+    "hit50": 20
+   },
+   "primary×residential": {
+    "n": 13,
+    "hit50": 8
+   },
+   "primary×tertiary": {
+    "n": 11,
+    "hit50": 8
+   },
+   "secondary×secondary": {
+    "n": 10,
+    "hit50": 6
+   },
+   "trunk×tertiary": {
+    "n": 6,
+    "hit50": 5
+   },
+   "residential×residential": {
+    "n": 3,
+    "hit50": 2
+   },
+   "trunk×residential": {
+    "n": 2,
+    "hit50": 1
+   },
+   "primary×secondary": {
+    "n": 1,
+    "hit50": 0
+   },
+   "primary×primary": {
+    "n": 1,
+    "hit50": 1
+   },
+   "trunk×primary": {
+    "n": 1,
+    "hit50": 0
+   },
+   "primary×unclassified": {
+    "n": 1,
+    "hit50": 0
+   },
+   "tertiary×unclassified": {
+    "n": 1,
+    "hit50": 0
+   },
+   "trunk×trunk": {
+    "n": 1,
+    "hit50": 0
+   }
+  }
+ },
+ {
+  "variant": "v3nc",
+  "note": "ablation: v3 with crash records withheld (independent second opinion)",
+  "questionHash": "021e03d5e07e19e0",
+  "model": "jev-latest",
+  "at": "2026-09-21T02:48:05.286Z",
+  "scored": 1059,
+  "missing": 0,
+  "tune": {
+   "signalized": {
+    "n": 161,
+    "needAltaOrCritica": 32.3,
+    "needMediaOrMore": 82,
+    "warrantGe": {
+     "0.1": 91.9,
+     "0.2": 87.6,
+     "0.3": 84.5,
+     "0.4": 81.4,
+     "0.5": 70.8,
+     "0.6": 56.5,
+     "0.7": 32.9,
+     "0.8": 6.8,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 78.3,
+     "0.2": 78.3,
+     "0.3": 78.3,
+     "0.4": 75.8,
+     "0.5": 68.3,
+     "0.6": 55.3,
+     "0.7": 32.9,
+     "0.8": 6.8,
+     "0.9": 0
+    },
+    "controlSignal": 78.3,
+    "controls": {
+     "ninguna intervención": 14.3,
+     "semáforo vehicular": 76.4,
+     "señal de PARE / ceda el paso": 7.5,
+     "semáforo peatonal": 1.9
+    },
+    "meanWarrantProb": 0.559
+   },
+   "quiet": {
+    "n": 211,
+    "needAltaOrCritica": 0,
+    "needMediaOrMore": 5.2,
+    "warrantGe": {
+     "0.1": 97.2,
+     "0.2": 40.3,
+     "0.3": 9.5,
+     "0.4": 0,
+     "0.5": 0,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 4.3,
+     "0.2": 4.3,
+     "0.3": 3.8,
+     "0.4": 0,
+     "0.5": 0,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 4.3,
+    "controls": {
+     "señal de PARE / ceda el paso": 82,
+     "glorieta": 2.8,
+     "reductores de velocidad": 6.6,
+     "ninguna intervención": 4.3,
+     "semáforo vehicular": 2.8,
+     "semáforo peatonal": 1.4
+    },
+    "meanWarrantProb": 0.189
+   },
+   "comparable": {
+    "n": 135,
+    "needAltaOrCritica": 11.1,
+    "needMediaOrMore": 61.5,
+    "warrantGe": {
+     "0.1": 88.1,
+     "0.2": 85.9,
+     "0.3": 71.9,
+     "0.4": 51.9,
+     "0.5": 28.1,
+     "0.6": 12.6,
+     "0.7": 3.7,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 36.3,
+     "0.2": 36.3,
+     "0.3": 36.3,
+     "0.4": 33.3,
+     "0.5": 25.9,
+     "0.6": 12.6,
+     "0.7": 3.7,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 36.3,
+    "controls": {
+     "señal de PARE / ceda el paso": 48.9,
+     "ninguna intervención": 14.1,
+     "semáforo vehicular": 31.9,
+     "semáforo peatonal": 4.4,
+     "glorieta": 0.7
+    },
+    "meanWarrantProb": 0.391
+   },
+   "roc": [
+    {
+     "threshold": 0.1,
+     "recallSignalized": 78.3,
+     "falseAlarmQuiet": 4.3,
+     "flaggedComparable": 36.3,
+     "recallWarrantOnly": 91.9,
+     "falseAlarmWarrantOnly": 97.2
+    },
+    {
+     "threshold": 0.2,
+     "recallSignalized": 78.3,
+     "falseAlarmQuiet": 4.3,
+     "flaggedComparable": 36.3,
+     "recallWarrantOnly": 87.6,
+     "falseAlarmWarrantOnly": 40.3
+    },
+    {
+     "threshold": 0.3,
+     "recallSignalized": 78.3,
+     "falseAlarmQuiet": 3.8,
+     "flaggedComparable": 36.3,
+     "recallWarrantOnly": 84.5,
+     "falseAlarmWarrantOnly": 9.5
+    },
+    {
+     "threshold": 0.4,
+     "recallSignalized": 75.8,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 33.3,
+     "recallWarrantOnly": 81.4,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.5,
+     "recallSignalized": 68.3,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 25.9,
+     "recallWarrantOnly": 70.8,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.6,
+     "recallSignalized": 55.3,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 12.6,
+     "recallWarrantOnly": 56.5,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.7,
+     "recallSignalized": 32.9,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 3.7,
+     "recallWarrantOnly": 32.9,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.8,
+     "recallSignalized": 6.8,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 0,
+     "recallWarrantOnly": 6.8,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.9,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    }
+   ],
+   "auc": 0.874
+  },
+  "holdout": {
+   "signalized": {
+    "n": 173,
+    "needAltaOrCritica": 29.5,
+    "needMediaOrMore": 79.2,
+    "warrantGe": {
+     "0.1": 89.6,
+     "0.2": 87.3,
+     "0.3": 85,
+     "0.4": 76.3,
+     "0.5": 69.4,
+     "0.6": 50.9,
+     "0.7": 28.3,
+     "0.8": 12.7,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 76.9,
+     "0.2": 76.9,
+     "0.3": 76.3,
+     "0.4": 73.4,
+     "0.5": 68.2,
+     "0.6": 50.9,
+     "0.7": 28.3,
+     "0.8": 12.7,
+     "0.9": 0
+    },
+    "controlSignal": 76.9,
+    "controls": {
+     "semáforo vehicular": 74,
+     "reductores de velocidad": 0.6,
+     "señal de PARE / ceda el paso": 8.7,
+     "ninguna intervención": 13.9,
+     "semáforo peatonal": 2.9
+    },
+    "meanWarrantProb": 0.545
+   },
+   "quiet": {
+    "n": 189,
+    "needAltaOrCritica": 0,
+    "needMediaOrMore": 4.8,
+    "warrantGe": {
+     "0.1": 97.9,
+     "0.2": 37.6,
+     "0.3": 7.4,
+     "0.4": 0.5,
+     "0.5": 0.5,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 5.3,
+     "0.2": 5.3,
+     "0.3": 4.8,
+     "0.4": 0.5,
+     "0.5": 0.5,
+     "0.6": 0,
+     "0.7": 0,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 5.3,
+    "controls": {
+     "señal de PARE / ceda el paso": 82,
+     "glorieta": 1.6,
+     "semáforo vehicular": 4.2,
+     "reductores de velocidad": 7.4,
+     "ninguna intervención": 3.7,
+     "semáforo peatonal": 1.1
+    },
+    "meanWarrantProb": 0.189
+   },
+   "comparable": {
+    "n": 165,
+    "needAltaOrCritica": 8.5,
+    "needMediaOrMore": 63,
+    "warrantGe": {
+     "0.1": 87.3,
+     "0.2": 85.5,
+     "0.3": 70.3,
+     "0.4": 49.1,
+     "0.5": 24.8,
+     "0.6": 10.9,
+     "0.7": 2.4,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 36.4,
+     "0.2": 35.8,
+     "0.3": 35.8,
+     "0.4": 34.5,
+     "0.5": 22.4,
+     "0.6": 10.3,
+     "0.7": 2.4,
+     "0.8": 0,
+     "0.9": 0
+    },
+    "controlSignal": 36.4,
+    "controls": {
+     "señal de PARE / ceda el paso": 50.3,
+     "semáforo vehicular": 33.9,
+     "ninguna intervención": 12.7,
+     "semáforo peatonal": 2.4,
+     "glorieta": 0.6
+    },
+    "meanWarrantProb": 0.379
+   },
+   "osmOnlySignalized": {
+    "n": 25,
+    "needAltaOrCritica": 32,
+    "needMediaOrMore": 80,
+    "warrantGe": {
+     "0.1": 84,
+     "0.2": 84,
+     "0.3": 80,
+     "0.4": 72,
+     "0.5": 64,
+     "0.6": 40,
+     "0.7": 20,
+     "0.8": 4,
+     "0.9": 0
+    },
+    "signalAndWarrantGe": {
+     "0.1": 68,
+     "0.2": 68,
+     "0.3": 68,
+     "0.4": 64,
+     "0.5": 60,
+     "0.6": 40,
+     "0.7": 20,
+     "0.8": 4,
+     "0.9": 0
+    },
+    "controlSignal": 68,
+    "controls": {
+     "semáforo vehicular": 68,
+     "ninguna intervención": 16,
+     "señal de PARE / ceda el paso": 12,
+     "glorieta": 4
+    },
+    "meanWarrantProb": 0.496
+   },
+   "roc": [
+    {
+     "threshold": 0.1,
+     "recallSignalized": 76.9,
+     "falseAlarmQuiet": 5.3,
+     "flaggedComparable": 36.4,
+     "recallWarrantOnly": 89.6,
+     "falseAlarmWarrantOnly": 97.9
+    },
+    {
+     "threshold": 0.2,
+     "recallSignalized": 76.9,
+     "falseAlarmQuiet": 5.3,
+     "flaggedComparable": 35.8,
+     "recallWarrantOnly": 87.3,
+     "falseAlarmWarrantOnly": 37.6
+    },
+    {
+     "threshold": 0.3,
+     "recallSignalized": 76.3,
+     "falseAlarmQuiet": 4.8,
+     "flaggedComparable": 35.8,
+     "recallWarrantOnly": 85,
+     "falseAlarmWarrantOnly": 7.4
+    },
+    {
+     "threshold": 0.4,
+     "recallSignalized": 73.4,
+     "falseAlarmQuiet": 0.5,
+     "flaggedComparable": 34.5,
+     "recallWarrantOnly": 76.3,
+     "falseAlarmWarrantOnly": 0.5
+    },
+    {
+     "threshold": 0.5,
+     "recallSignalized": 68.2,
+     "falseAlarmQuiet": 0.5,
+     "flaggedComparable": 22.4,
+     "recallWarrantOnly": 69.4,
+     "falseAlarmWarrantOnly": 0.5
+    },
+    {
+     "threshold": 0.6,
+     "recallSignalized": 50.9,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 10.3,
+     "recallWarrantOnly": 50.9,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.7,
+     "recallSignalized": 28.3,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 2.4,
+     "recallWarrantOnly": 28.3,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.8,
+     "recallSignalized": 12.7,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 0,
+     "recallWarrantOnly": 12.7,
+     "falseAlarmWarrantOnly": 0
+    },
+    {
+     "threshold": 0.9,
+     "recallSignalized": 0,
+     "falseAlarmQuiet": 0,
+     "flaggedComparable": 0,
+     "recallWarrantOnly": 0,
+     "falseAlarmWarrantOnly": 0
+    }
+   ],
+   "auc": 0.867
+  },
+  "signalizedByClassPair": {
+   "tertiary×residential": {
+    "n": 32,
+    "hit50": 18
+   },
+   "tertiary×tertiary": {
+    "n": 30,
+    "hit50": 22
+   },
+   "secondary×tertiary": {
+    "n": 26,
+    "hit50": 25
+   },
+   "secondary×residential": {
+    "n": 22,
+    "hit50": 18
+   },
+   "primary×residential": {
+    "n": 13,
+    "hit50": 5
+   },
+   "primary×tertiary": {
+    "n": 11,
+    "hit50": 8
+   },
+   "secondary×secondary": {
+    "n": 10,
+    "hit50": 6
+   },
+   "trunk×tertiary": {
+    "n": 6,
+    "hit50": 4
+   },
+   "residential×residential": {
+    "n": 3,
+    "hit50": 0
+   },
+   "trunk×residential": {
+    "n": 2,
+    "hit50": 2
+   },
+   "primary×secondary": {
+    "n": 1,
+    "hit50": 0
+   },
+   "primary×primary": {
+    "n": 1,
+    "hit50": 1
+   },
+   "trunk×primary": {
+    "n": 1,
+    "hit50": 0
+   },
+   "primary×unclassified": {
+    "n": 1,
+    "hit50": 0
+   },
+   "tertiary×unclassified": {
+    "n": 1,
+    "hit50": 1
+   },
+   "trunk×trunk": {
+    "n": 1,
+    "hit50": 0
+   }
+  }
+ }
+]

@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: >-
+  Si usas este proyecto, cítalo así. / If you use this project, please cite it as below.
+type: software
+title: "Semáforos de Barranquilla"
+abstract: >-
+  Mapa abierto de las calles y los semáforos de Barranquilla (Colombia), con una lista priorizada de cruces
+  que conviene estudiar primero para un posible semáforo. Combina OpenStreetMap, los datos abiertos de
+  siniestralidad y de semaforización de la Alcaldía de Barranquilla, reglas propias y un modelo de IA de
+  decisión. Es una señal para priorizar estudios técnicos, no un dictamen de ingeniería de tránsito.
+  Proyecto independiente y no oficial.
+authors:
+  - given-names: Victor
+    family-names: Pay
+    alias: victorpay
+version: 0.1.0
+date-released: "2026-10-01"
+url: "https://semaforos-baq.vercel.app"
+repository-code: "https://github.com/Victorpay1/semaforos-barranquilla"
+license:
+  - Apache-2.0
+  - ODbL-1.0
+  - CC-BY-SA-4.0
+  - CC-BY-4.0
+keywords:
+  - Barranquilla
+  - Colombia
+  - semáforos
+  - traffic signals
+  - road safety
+  - seguridad vial
+  - OpenStreetMap
+  - datos abiertos
+  - open data
+  - civic tech
+references:
+  - type: database
+    title: "OpenStreetMap"
+    authors:
+      - name: "OpenStreetMap contributors"
+    url: "https://www.openstreetmap.org"
+    license: ODbL-1.0
+    notes: "Calles, cruces, semáforos y puntos de interés; descarga del 20 de septiembre de 2026."
+  - type: database
+    title: "Accidentalidad en Barranquilla"
+    authors:
+      - name: "Alcaldía Distrital de Barranquilla"
+    url: "https://www.datos.gov.co/d/yb9r-2dsi"
+    license: CC-BY-SA-4.0
+    notes: "Portal de Datos Abiertos www.datos.gov.co, conjunto yb9r-2dsi."
+  - type: database
+    title: "Semaforización en Barranquilla"
+    authors:
+      - name: "Alcaldía Distrital de Barranquilla"
+    url: "https://www.datos.gov.co/d/svyb-d6ts"
+    license: CC-BY-SA-4.0
+    notes: "Portal de Datos Abiertos www.datos.gov.co, conjunto svyb-d6ts."

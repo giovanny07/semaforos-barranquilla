@@ -1,0 +1,27 @@
+{
+  "name": "semaforos-barranquilla",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mapa abierto de las calles y semáforos de Barranquilla, con una lista priorizada de cruces para estudio técnico de semaforización.",
+  "license": "Apache-2.0",
+  "author": "Victor Pay",
+  "homepage": "https://semaforos-baq.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Victorpay1/semaforos-barranquilla.git"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @semaforos/web run dev",
+    "build": "pnpm --filter @semaforos/web run build",
+    "data": "pnpm --filter @semaforos/pipeline run data",
+    "fetch": "pnpm --filter @semaforos/pipeline run fetch",
+    "score": "pnpm --filter @semaforos/scorer-jev run score",
+    "test": "pnpm -r --if-present run test",
+    "lint": "pnpm -r --if-present run lint",
+    "typecheck": "pnpm -r --if-present run typecheck"
+  }
+}

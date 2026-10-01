@@ -1,0 +1,71 @@
+name: Corrección de datos / Data correction
+description: Un semáforo o un cruce que falta, sobra o está mal en el mapa. / A signal or junction that is missing, extra or wrong.
+title: "[Datos] "
+labels: ["datos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por revisar el mapa. Cada corrección queda anotada, con fecha, en `CHANGELOG.md`.
+
+        Las calles y los semáforos vienen de OpenStreetMap; los siniestros y el inventario oficial, de la Alcaldía (datos.gov.co). Si sabes editar OpenStreetMap, también puedes corregirlo allá con lo que hayas visto tú mismo; la próxima actualización lo recoge.
+
+        **Privacidad:** no incluyas nombres, caras, placas ni datos de personas involucradas en siniestros.
+
+        *English is fine too.*
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: ¿Qué está mal? / What's wrong?
+      options:
+        - Falta un semáforo que sí existe / A signal exists but is missing
+        - Aparece un semáforo que no existe / The map shows a signal that doesn't exist
+        - El cruce no existe o está mal ubicado / The junction doesn't exist or is misplaced
+        - Un nombre de calle está mal / A street name is wrong
+        - Los siniestros parecen mal asignados / Crashes look misassigned
+        - El cruce no debería ser candidato (o falta uno) / The junction shouldn't be a candidate (or one is missing)
+        - Otro / Other
+    validations:
+      required: true
+  - type: input
+    id: cruce
+    attributes:
+      label: Cruce / Junction
+      description: Las calles tal como aparecen en el mapa, y el enlace o id del cruce si lo tienes. / Street names as shown on the map, plus the junction link or id if you have it.
+      placeholder: "Vía 40 × Calle 75"
+    validations:
+      required: true
+  - type: input
+    id: ubicacion
+    attributes:
+      label: Ubicación / Location
+      description: Un enlace (OpenStreetMap, Google Maps) o coordenadas. / A link or coordinates.
+      placeholder: "https://www.openstreetmap.org/#map=19/11.0000/-74.8000"
+  - type: textarea
+    id: detalle
+    attributes:
+      label: ¿Qué muestra el mapa y qué es lo correcto? / What does the map show, and what is correct?
+    validations:
+      required: true
+  - type: dropdown
+    id: fuente
+    attributes:
+      label: ¿Cómo lo sabes? / How do you know?
+      options:
+        - Lo vi en persona / I saw it in person
+        - Street View u otras imágenes / Street View or other imagery
+        - Una fuente oficial / An official source
+        - Otro / Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia / Evidence
+      description: Una foto tuya (sin caras ni placas), un enlace a Street View con su fecha, o el enlace a la fuente oficial. Puedes arrastrar imágenes aquí. / A photo you took (no faces or plates), a dated Street View link, or a link to the official source.
+  - type: checkboxes
+    id: osm
+    attributes:
+      label: OpenStreetMap
+      options:
+        - label: Ya lo corregí en OpenStreetMap (pon el enlace al conjunto de cambios arriba). / I already fixed it in OpenStreetMap (link the changeset above).

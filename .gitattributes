@@ -1,0 +1,12 @@
+# Normalise line endings in text files.
+* text=auto eol=lf
+
+# Large generated data: keep pull requests readable and skip them in the language stats.
+*.geojson linguist-generated=true -diff
+data/out/*.json linguist-generated=true -diff
+data/raw/*.json linguist-generated=true -diff
+web/public/data/*.json linguist-generated=true -diff
+
+*.png binary
+*.ico binary
+*.woff2 binary

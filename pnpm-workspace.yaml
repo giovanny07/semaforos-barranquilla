@@ -1,0 +1,10 @@
+packages:
+  - pipeline
+  - scorer-jev
+  - web
+
+# Dependencies allowed to run install scripts (pnpm 11 refuses unknown ones).
+allowBuilds:
+  esbuild: true
+  sharp: false
+  unrs-resolver: false

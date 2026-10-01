@@ -1,0 +1,26 @@
+{
+  "name": "@semaforos/scorer-jev",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional, paid re-scoring of the junctions with the Jev decision model (TypeSafe). Not needed to build the map.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "score": "tsx src/cli.ts",
+    "dry-run": "tsx src/cli.ts --dry-run",
+    "backtest": "tsx src/backtest.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "ai": "^7.0.107"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

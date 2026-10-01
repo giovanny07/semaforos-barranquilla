@@ -1,0 +1,490 @@
+{
+ "records": 28523,
+ "byYear": {
+  "2018": {
+   "total": 5898,
+   "damageOnly": 4128,
+   "withVictims": 1770
+  },
+  "2019": {
+   "total": 5645,
+   "damageOnly": 4019,
+   "withVictims": 1626
+  },
+  "2020": {
+   "total": 3281,
+   "damageOnly": 2186,
+   "withVictims": 1095
+  },
+  "2021": {
+   "total": 4700,
+   "damageOnly": 3233,
+   "withVictims": 1467
+  },
+  "2022": {
+   "total": 3683,
+   "damageOnly": 1883,
+   "withVictims": 1800
+  },
+  "2023": {
+   "total": 1674,
+   "damageOnly": 6,
+   "withVictims": 1668
+  },
+  "2024": {
+   "total": 1482,
+   "damageOnly": 5,
+   "withVictims": 1477
+  },
+  "2025": {
+   "total": 1656,
+   "damageOnly": 9,
+   "withVictims": 1647
+  },
+  "2026": {
+   "total": 504,
+   "damageOnly": 1,
+   "withVictims": 503
+  }
+ },
+ "parsedAsJunction": 22882,
+ "matched": 18797,
+ "matchRateAll": 0.659,
+ "matchRateJunctionFormat": 0.8215,
+ "unmatched": {
+  "door": 3676,
+  "between": 1047,
+  "single": 6,
+  "other": 912,
+  "no_such_crossing": 3244,
+  "ambiguous": 841
+ },
+ "inPeriod": {
+  "records": 23207,
+  "matched": 15093
+ },
+ "sample": [
+  {
+   "address": "CL 87 CR 53",
+   "year": "2020",
+   "matchedTo": "Calle 87 × Carrera 53 (n1528446383)",
+   "lat": 11.010295,
+   "lon": -74.818968
+  },
+  {
+   "address": "CR 54 CL 53",
+   "year": "2018",
+   "matchedTo": "Carrera 54 × Calle 53 (n625015803)",
+   "lat": 10.992725,
+   "lon": -74.789257
+  },
+  {
+   "address": "CRA 57 CALLE 72",
+   "year": "2019",
+   "matchedTo": "Calle 72 × Carrera 57 (n1157689105)",
+   "lat": 11.000694,
+   "lon": -74.799283
+  },
+  {
+   "address": "CR 46 CL 62",
+   "year": "2019",
+   "matchedTo": "Calle 62 × Avenida Carrera 46 (n4505996602)",
+   "lat": 10.990762,
+   "lon": -74.797067
+  },
+  {
+   "address": "CALLE 84 CON CARRERA 42B1",
+   "year": "2024",
+   "matchedTo": "Carrera 42B 1 × Calle 84 (n3001434028)",
+   "lat": 10.993613,
+   "lon": -74.824907
+  },
+  {
+   "address": "CALLE 85 CRA 57",
+   "year": "2022",
+   "matchedTo": "Calle 85 × Carrera 57 (n597621367)",
+   "lat": 11.010192,
+   "lon": -74.815177
+  },
+  {
+   "address": "CL 30 CR 35",
+   "year": "2018",
+   "matchedTo": "Carrera 35 × Avenida Calle 30 (n1157734509)",
+   "lat": 10.973786,
+   "lon": -74.778579
+  },
+  {
+   "address": "VIA 40 CL 77",
+   "year": "2020",
+   "matchedTo": "Vía 40 × Calle 77 (n1218295080)",
+   "lat": 11.016164,
+   "lon": -74.795352
+  },
+  {
+   "address": "CARRERA 14 CALLE 64",
+   "year": "2018",
+   "matchedTo": "Carrera 14 × Calle 64 (n1229202914)",
+   "lat": 10.961975,
+   "lon": -74.809593
+  },
+  {
+   "address": "CALLE 30 CARRERA 8",
+   "year": "2024",
+   "matchedTo": "Carrera 8 × Avenida Calle 30 × Diagonal 8 (n1014134600)",
+   "lat": 10.946983,
+   "lon": -74.784791
+  },
+  {
+   "address": "CALLE 97A CARRERA 9 G",
+   "year": "2023",
+   "matchedTo": "Calle 97A × Carrera 9G (n619320090)",
+   "lat": 10.958262,
+   "lon": -74.827399
+  },
+  {
+   "address": "CL 49 CR 54",
+   "year": "2019",
+   "matchedTo": "Carrera 54 × Calle 49 (n625000134)",
+   "lat": 10.993228,
+   "lon": -74.787207
+  },
+  {
+   "address": "CLLE 79 CRA 73",
+   "year": "2018",
+   "matchedTo": "Calle 79 × Carrera 73 (n1157689126)",
+   "lat": 11.016417,
+   "lon": -74.803172
+  },
+  {
+   "address": "CR 6 CL 94",
+   "year": "2021",
+   "matchedTo": "Avenida de La Cordialidad × Calle 94 (n1238099897,n1230374682)",
+   "lat": 10.944429,
+   "lon": -74.825933
+  },
+  {
+   "address": "CL 75 CR 54",
+   "year": "2021",
+   "matchedTo": "Calle 75 × Carrera 54 (n1157689139)",
+   "lat": 11.00187,
+   "lon": -74.803859
+  },
+  {
+   "address": "CL 82 CR 42H",
+   "year": "2021",
+   "matchedTo": "Carrera 42H × Calle 82 (n639042303)",
+   "lat": 10.996907,
+   "lon": -74.818339
+  },
+  {
+   "address": "CRA 14 CALLE 108",
+   "year": "2025",
+   "matchedTo": "Carrera 14 × Calle 108 (n1228876602)",
+   "lat": 10.96871,
+   "lon": -74.834237
+  },
+  {
+   "address": "CR 45B CL 32",
+   "year": "2021",
+   "matchedTo": "Carrera 45B × Calle 32 (n1160076022)",
+   "lat": 10.984389,
+   "lon": -74.776659
+  },
+  {
+   "address": "CL 17 CR 35",
+   "year": "2019",
+   "matchedTo": "Carrera 35 × Avenida Calle 17 (n1158578097)",
+   "lat": 10.972325,
+   "lon": -74.77471
+  },
+  {
+   "address": "CALLE 30 CARRERA 20",
+   "year": "2018",
+   "matchedTo": "Avenida Calle 30 × Carrera 20 (n659619055)",
+   "lat": 10.956743,
+   "lon": -74.785957
+  },
+  {
+   "address": "AV VIA 40 CON CALLE 85",
+   "year": "2021",
+   "matchedTo": "Vía 40 × Calle 85 (n1132517558)",
+   "lat": 11.026356,
+   "lon": -74.803814
+  },
+  {
+   "address": "CR 43 CL 112",
+   "year": "2021",
+   "matchedTo": "Calle 112 × Carrera 43 (n7123744075,n7123744076,n7123789935)",
+   "lat": 10.99484,
+   "lon": -74.841431
+  },
+  {
+   "address": "CL 75 CR 49C",
+   "year": "2019",
+   "matchedTo": "Carrera 49C × Calle 75 (n639042961,n638722873)",
+   "lat": 10.999769,
+   "lon": -74.806789
+  },
+  {
+   "address": "CL 55 CR 33",
+   "year": "2018",
+   "matchedTo": "Calle 55 × Carrera 33 (n3429786432)",
+   "lat": 10.978405,
+   "lon": -74.797424
+  },
+  {
+   "address": "CALLE 90 CARRERA 4B",
+   "year": "2023",
+   "matchedTo": "Calle 90 × Carrera 4B (n1230374384)",
+   "lat": 10.941648,
+   "lon": -74.824094
+  },
+  {
+   "address": "CR 51B CL 91",
+   "year": "2019",
+   "matchedTo": "Calle 91 × Carrera 51B (n638723324)",
+   "lat": 11.008538,
+   "lon": -74.823238
+  },
+  {
+   "address": "CL 80 CR 42G",
+   "year": "2019",
+   "matchedTo": "Carrera 42G × Calle 80 (n642024871)",
+   "lat": 10.995084,
+   "lon": -74.816576
+  },
+  {
+   "address": "CR 14 CL 48",
+   "year": "2020",
+   "matchedTo": "Calle 48 × Carrera 14 × Calle 45C 1 (n8267849377,n9243906104)",
+   "lat": 10.955297,
+   "lon": -74.800276
+  },
+  {
+   "address": "CARRERA 51B CON CALLE 87",
+   "year": "2025",
+   "matchedTo": "Carrera 51B × Calle 87 (n621185708)",
+   "lat": 11.007396,
+   "lon": -74.820694
+  },
+  {
+   "address": "CR 46 CL 75",
+   "year": "2019",
+   "matchedTo": "Calle 75 × Avenida Carrera 46 (n1221653412)",
+   "lat": 10.996092,
+   "lon": -74.808879
+  }
+ ],
+ "topUnmatched": [
+  {
+   "pattern": "CL # # #",
+   "n": 707,
+   "example": "CL 87 9H 24"
+  },
+  {
+   "pattern": "CR # # #",
+   "n": 694,
+   "example": "CR 51B 1D 35"
+  },
+  {
+   "pattern": "CALLE # # #-#",
+   "n": 225,
+   "example": "CALLE 110 # 43-448"
+  },
+  {
+   "pattern": "CARRERA # # #-#",
+   "n": 150,
+   "example": "CARRERA 50 # 84-153"
+  },
+  {
+   "pattern": "CL # CR # #",
+   "n": 149,
+   "example": "CL 99 CR 52 53"
+  },
+  {
+   "pattern": "CL # CR # Y #",
+   "n": 143,
+   "example": "CL 30 CR 21 Y 22"
+  },
+  {
+   "pattern": "CALLE # # # - #",
+   "n": 120,
+   "example": "CALLE 110 # 6 - 360"
+  },
+  {
+   "pattern": "CR # CL # #",
+   "n": 100,
+   "example": "CR 21 CL 74B 23"
+  },
+  {
+   "pattern": "CARRERA # #-#",
+   "n": 98,
+   "example": "CARRERA 25 37-42"
+  },
+  {
+   "pattern": "CR # CL # Y #",
+   "n": 97,
+   "example": "CR 46 CL 92 Y 93"
+  },
+  {
+   "pattern": "CALLE # #-#",
+   "n": 94,
+   "example": "calle 110 21-87"
+  },
+  {
+   "pattern": "VIA # # #",
+   "n": 84,
+   "example": "VIA 40 85B 300"
+  },
+  {
+   "pattern": "CALLE # N°#-#",
+   "n": 78,
+   "example": "CALLE 34 N°45-29"
+  },
+  {
+   "pattern": "CARRERA # N°#-#",
+   "n": 76,
+   "example": "CARRERA 16 N°47-30"
+  },
+  {
+   "pattern": "CRA # # #-#",
+   "n": 64,
+   "example": "CRA 13 # 62-33"
+  }
+ ],
+ "topUnmatchedPairs": [
+  {
+   "address": "CL 110 CR 6",
+   "n": 66,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CL 110 CR 43",
+   "n": 55,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CL 17 CR 8",
+   "n": 53,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CL 110 CR 38",
+   "n": 49,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CL 110 CR 27",
+   "n": 33,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CL 19 CR 1",
+   "n": 32,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CALLE 110 CARRERA 43",
+   "n": 30,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CL 110 CR 46",
+   "n": 28,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CALLE 110 CARRERA 6",
+   "n": 28,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CL 19 CR 7",
+   "n": 27,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CALLE 17 CARRERA 8",
+   "n": 27,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CR 38 CL 110",
+   "n": 25,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "AV CIRCUNVALAR CR 27",
+   "n": 20,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "VIA 40 CL 67",
+   "n": 18,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CL 110 CR 37",
+   "n": 18,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CALLE 110 CRA 6",
+   "n": 18,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "AV CIRCUNVALAR CR 43",
+   "n": 17,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CR 46 CL 110",
+   "n": 17,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CALLE 110 CARRERA 38",
+   "n": 16,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CR 6 CL 110",
+   "n": 15,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "AV CIRCUNVALAR CR 6",
+   "n": 15,
+   "reason": "no_such_crossing"
+  },
+  {
+   "address": "CL 19 CR 8",
+   "n": 15,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "AV CIRCUNVALAR CR 15 SUR",
+   "n": 15,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CL 17 CR 15",
+   "n": 15,
+   "reason": "ambiguous"
+  },
+  {
+   "address": "CR 38 CL 83",
+   "n": 15,
+   "reason": "no_such_crossing"
+  }
+ ],
+ "percentileScale": {
+  "groups": 2544,
+  "p50": 2,
+  "p75": 5,
+  "p90": 10,
+  "p95": 14,
+  "max": 196
+ }
+}

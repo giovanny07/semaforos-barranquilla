@@ -1,0 +1,172 @@
+{
+ "type": "FeatureCollection",
+ "_note": "SYNTHETIC fixture for jev/ dry-runs and tests. Not real data.",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.8,
+     10.99
+    ]
+   },
+   "properties": {
+    "id": "fx-1",
+    "jev": null,
+    "streets": [
+     "Calle 30",
+     "Carrera 21"
+    ],
+    "classes": [
+     "primary",
+     "primary",
+     "tertiary",
+     "tertiary"
+    ],
+    "maxClass": "primary",
+    "minClass": "tertiary",
+    "legs": 4,
+    "maxLanes": 3,
+    "hasSignal": false,
+    "distNearestSignalM": 520,
+    "pois": {
+     "school": 1,
+     "hospital": 0,
+     "market": 1,
+     "busStop": 4,
+     "worship": 0,
+     "park": 0
+    },
+    "heuristicScore": 78,
+    "heuristicReasons": [
+     "Cruce de vía primaria con terciaria"
+    ],
+    "status": "needs_high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.81,
+     11
+    ]
+   },
+   "properties": {
+    "id": "fx-2",
+    "jev": null,
+    "streets": [
+     "Calle 45",
+     "Carrera 44"
+    ],
+    "classes": [
+     "secondary",
+     "secondary",
+     "secondary",
+     "secondary"
+    ],
+    "maxClass": "secondary",
+    "minClass": "secondary",
+    "legs": 4,
+    "maxLanes": 2,
+    "hasSignal": true,
+    "distNearestSignalM": 4,
+    "pois": {
+     "school": 0,
+     "hospital": 1,
+     "market": 0,
+     "busStop": 2,
+     "worship": 1,
+     "park": 0
+    },
+    "heuristicScore": null,
+    "heuristicReasons": [],
+    "status": "signalized"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.82,
+     10.97
+    ]
+   },
+   "properties": {
+    "id": "fx-3",
+    "jev": null,
+    "streets": [
+     "Calle 50B",
+     "Carrera 8"
+    ],
+    "classes": [
+     "residential",
+     "residential",
+     "residential"
+    ],
+    "maxClass": "residential",
+    "minClass": "residential",
+    "legs": 3,
+    "maxLanes": null,
+    "hasSignal": false,
+    "distNearestSignalM": 1430,
+    "pois": {
+     "school": 0,
+     "hospital": 0,
+     "market": 0,
+     "busStop": 0,
+     "worship": 0,
+     "park": 1
+    },
+    "heuristicScore": 6,
+    "heuristicReasons": [],
+    "status": "ok"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.79,
+     11.01
+    ]
+   },
+   "properties": {
+    "id": "fx-4",
+    "jev": null,
+    "streets": [
+     "Carrera 38",
+     "Calle 74"
+    ],
+    "classes": [
+     "secondary",
+     "secondary",
+     "residential"
+    ],
+    "maxClass": "secondary",
+    "minClass": "residential",
+    "legs": 3,
+    "maxLanes": 2,
+    "hasSignal": false,
+    "distNearestSignalM": 180,
+    "pois": {
+     "school": 2,
+     "hospital": 0,
+     "market": 0,
+     "busStop": 1,
+     "worship": 0,
+     "park": 0
+    },
+    "heuristicScore": 41,
+    "heuristicReasons": [
+     "Colegios cercanos"
+    ],
+    "status": "needs_medium"
+   }
+  }
+ ]
+}

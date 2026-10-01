@@ -1,0 +1,462 @@
+{
+ "officialPointsInFile": 342,
+ "officialPointsInsideStudyArea": 341,
+ "osmSignalNodes": 1223,
+ "sites": {
+  "total": 364,
+  "ambos": 331,
+  "soloOsm": 31,
+  "soloOficial": 2
+ },
+ "officialMatchedToOsm": 339,
+ "sitesWithSeveralOfficialPoints": [
+  [
+   "CALLE 87 CON CARRERA 46",
+   "CALLE 87 CON CARRERA 47"
+  ],
+  [
+   "CALLE 76 CON CARRERA 42F",
+   "CALLE 76B CON CARRERA 42F"
+  ],
+  [
+   "CALLE 55 CON CARRERA 54",
+   "CALLE 58 CON CARRERA 54"
+  ],
+  [
+   "CALLE 64 CON CARRERA 54",
+   "CALLE 64 CON CARRERA 58"
+  ],
+  [
+   "CALLE 74 CON CARRERA 42F",
+   "CALLE 74 CON CARRERA 43"
+  ],
+  [
+   "CALLE 30 CON CARRERA 46",
+   "CALLE 34 CON CARRERA 46 *norte",
+   "CALLE 34 CON CARRERA 46 *sur"
+  ],
+  [
+   "CALLE 79 CON CARRERA 59B",
+   "CALLE 79 CON CARRERA 60"
+  ]
+ ],
+ "signalizedJunctions": {
+  "total": 361,
+  "ambos": 334,
+  "soloOsm": 25,
+  "soloOficial": 2
+ },
+ "coveredJunctions": 67,
+ "sitesWithoutJunction": [
+  {
+   "source": "ambos",
+   "pedestrianOnly": false,
+   "nodes": 4,
+   "official": [
+    "CALLE 45 CON CARRERA 20B"
+   ],
+   "lat": 10.961252,
+   "lon": -74.793398
+  },
+  {
+   "source": "ambos",
+   "pedestrianOnly": false,
+   "nodes": 3,
+   "official": [
+    "CALLE 85 CON CARRERA 52"
+   ],
+   "lat": 11.007338,
+   "lon": -74.818276
+  },
+  {
+   "source": "osm",
+   "pedestrianOnly": false,
+   "nodes": 1,
+   "official": [],
+   "lat": 10.978638,
+   "lon": -74.790833
+  },
+  {
+   "source": "osm",
+   "pedestrianOnly": false,
+   "nodes": 1,
+   "official": [],
+   "lat": 10.994981,
+   "lon": -74.803193
+  },
+  {
+   "source": "osm",
+   "pedestrianOnly": false,
+   "nodes": 2,
+   "official": [],
+   "lat": 10.995184,
+   "lon": -74.803561
+  },
+  {
+   "source": "osm",
+   "pedestrianOnly": false,
+   "nodes": 1,
+   "official": [],
+   "lat": 10.995417,
+   "lon": -74.803983
+  },
+  {
+   "source": "osm",
+   "pedestrianOnly": false,
+   "nodes": 1,
+   "official": [],
+   "lat": 10.996131,
+   "lon": -74.805275
+  },
+  {
+   "source": "ambos",
+   "pedestrianOnly": false,
+   "nodes": 1,
+   "official": [
+    "AVENIDA DEL RIO PUENTE LEVADIZO"
+   ],
+   "lat": 10.999069,
+   "lon": -74.773239
+  },
+  {
+   "source": "osm",
+   "pedestrianOnly": false,
+   "nodes": 1,
+   "official": [],
+   "lat": 10.999856,
+   "lon": -74.77357
+  }
+ ],
+ "officialWithoutOsm": [
+  {
+   "nombre": "CALLE 30 CON CARRERA 21B",
+   "estado": "Funcionando",
+   "fechaInicio": "9/2/2002",
+   "lat": 10.9609495,
+   "lon": -74.7843952,
+   "nearestOsmSignalM": 153,
+   "junction": "n1157734552"
+  },
+  {
+   "nombre": "CALLE 106 CON CARRERA 65A",
+   "estado": "Preventiva Funcionando",
+   "fechaInicio": "3/12/2023",
+   "lat": 11.027457,
+   "lon": -74.830043,
+   "nearestOsmSignalM": 1191,
+   "junction": "n10847059849"
+  }
+ ],
+ "osmWithoutOfficial": [
+  {
+   "where": "Carrera 42H × Calle 84",
+   "lat": 10.997701,
+   "lon": -74.820472,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 95
+  },
+  {
+   "where": "Calle 99 × Carrera 57",
+   "lat": 11.016841,
+   "lon": -74.825889,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 96
+  },
+  {
+   "where": "Carrera 9G × Calle 87",
+   "lat": 10.95825,
+   "lon": -74.824991,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 1435
+  },
+  {
+   "where": "Calle 41 × Carrera 8",
+   "lat": 10.94616,
+   "lon": -74.796065,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 389
+  },
+  {
+   "where": "Carrera 14 × Calle 40",
+   "lat": 10.953056,
+   "lon": -74.793895,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 292
+  },
+  {
+   "where": "Carrera 37 × Calle 50",
+   "lat": 10.979529,
+   "lon": -74.790603,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 129
+  },
+  {
+   "where": "Carrera 45 × Calle 84",
+   "lat": 11.000789,
+   "lon": -74.819296,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 87
+  },
+  {
+   "where": "Calle 98 × Carrera 57",
+   "lat": 11.016368,
+   "lon": -74.824773,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 169
+  },
+  {
+   "where": "Calle 64C × Carrera 15",
+   "lat": 10.963607,
+   "lon": -74.810129,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 516
+  },
+  {
+   "where": "Avenida Calle 17 × Carrera 23",
+   "lat": 10.960635,
+   "lon": -74.774901,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 745
+  },
+  {
+   "where": "Avenida Murillo × Vía 40",
+   "lat": 10.996671,
+   "lon": -74.782669,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 65
+  },
+  {
+   "where": "Carrera 27 × Calle 39",
+   "lat": 10.968009,
+   "lon": -74.786228,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 288
+  },
+  {
+   "where": "Calle 34 × Carrera 45",
+   "lat": 10.983695,
+   "lon": -74.777163,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 48
+  },
+  {
+   "where": "Carrera 41 × Calle 68",
+   "lat": 10.986673,
+   "lon": -74.803134,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 83
+  },
+  {
+   "where": "Calle 75 × Avenida Carrera 46",
+   "lat": 10.996092,
+   "lon": -74.808879,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 135
+  },
+  {
+   "where": "Carrera 47 × Calle 75",
+   "lat": 10.996869,
+   "lon": -74.808482,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 149
+  },
+  {
+   "where": "Carrera 21B × Avenida Calle 30",
+   "lat": 10.958638,
+   "lon": -74.785249,
+   "nodes": 5,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 222
+  },
+  {
+   "where": "(sin cruce vial asociado)",
+   "lat": 10.978638,
+   "lon": -74.790833,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": false,
+   "nearestOfficialM": 231
+  },
+  {
+   "where": "Carrera 39 × Calle 72",
+   "lat": 10.987314,
+   "lon": -74.809584,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 237
+  },
+  {
+   "where": "Carrera 44 × Calle 53",
+   "lat": 10.985891,
+   "lon": -74.790814,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 130
+  },
+  {
+   "where": "Carrera 30 × Corredor Portuario",
+   "lat": 10.967388,
+   "lon": -74.769918,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 542
+  },
+  {
+   "where": "Vía 40 × Calle 98",
+   "lat": 11.032879,
+   "lon": -74.810683,
+   "nodes": 3,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 1041
+  },
+  {
+   "where": "Calle 34 × Vía 40 × Avenida Carrera 46",
+   "lat": 10.985208,
+   "lon": -74.776604,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 64
+  },
+  {
+   "where": "Carrera 54 × Vía 40",
+   "lat": 10.997161,
+   "lon": -74.782916,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 125
+  },
+  {
+   "where": "Avenida de La Cordialidad × Calle 91",
+   "lat": 10.944733,
+   "lon": -74.824705,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": true,
+   "nearestOfficialM": 347
+  },
+  {
+   "where": "(sin cruce vial asociado)",
+   "lat": 10.994981,
+   "lon": -74.803193,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": false,
+   "nearestOfficialM": 72
+  },
+  {
+   "where": "(sin cruce vial asociado)",
+   "lat": 10.995184,
+   "lon": -74.803561,
+   "nodes": 2,
+   "pedestrianOnly": false,
+   "hasJunction": false,
+   "nearestOfficialM": 118
+  },
+  {
+   "where": "(sin cruce vial asociado)",
+   "lat": 10.995417,
+   "lon": -74.803983,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": false,
+   "nearestOfficialM": 86
+  },
+  {
+   "where": "(sin cruce vial asociado)",
+   "lat": 10.996131,
+   "lon": -74.805275,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": false,
+   "nearestOfficialM": 76
+  },
+  {
+   "where": "Carrera 68 × Calle 72",
+   "lat": 11.00668,
+   "lon": -74.792957,
+   "nodes": 2,
+   "pedestrianOnly": true,
+   "hasJunction": true,
+   "nearestOfficialM": 311
+  },
+  {
+   "where": "(sin cruce vial asociado)",
+   "lat": 10.999856,
+   "lon": -74.77357,
+   "nodes": 1,
+   "pedestrianOnly": false,
+   "hasJunction": false,
+   "nearestOfficialM": 58
+  }
+ ],
+ "parameters": {
+  "linkM": 40,
+  "officialMatchM": 80,
+  "junctionRadiusM": 30,
+  "officialJunctionRadiusM": 50,
+  "fallbackJunctionRadiusM": 60
+ },
+ "officialNameCheck": {
+  "parsed": 317,
+  "agree": 316,
+  "disagree": [
+   {
+    "nombre": "CALLE 47 CON CARRERA 22",
+    "matchedTo": "Avenida de La Cordialidad × Carrera 22"
+   }
+  ]
+ },
+ "largestSiteSpansM": [
+  82,
+  63,
+  55,
+  54,
+  53,
+  53,
+  47,
+  45,
+  44,
+  38,
+  37,
+  37
+ ]
+}

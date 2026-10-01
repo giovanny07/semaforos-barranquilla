@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark theme: the UI only uses white + the slate scale for neutrals, so inverting that scale re-themes everything. */
+.dark {
+  color-scheme: dark;
+  --color-white: #0f1729;
+  --color-slate-50: #162033;
+  --color-slate-100: #1c2840;
+  --color-slate-200: #2a3752;
+  --color-slate-300: #3b4a68;
+  --color-slate-400: #7384a3;
+  --color-slate-500: #93a3be;
+  --color-slate-600: #b0bdd3;
+  --color-slate-700: #cbd5e4;
+  --color-slate-800: #e2e8f0;
+  --color-slate-900: #f1f5f9;
+}
+
+html, body { height: 100%; }
+body { background: var(--color-slate-100); color: var(--color-slate-800); font-family: var(--font-geist-sans), system-ui, sans-serif; }
+
+.maplibregl-ctrl-group { border-radius: 10px; box-shadow: 0 1px 4px rgb(15 23 42 / 0.15) !important; }
+
+* { scrollbar-width: thin; scrollbar-color: rgb(15 23 42 / 0.18) transparent; }
+
+.dark .maplibregl-ctrl-group { background: #1c2840; }
+.dark .maplibregl-ctrl-group button + button { border-top-color: #2a3752; }
+.dark .maplibregl-ctrl-icon { filter: invert(1); }
+.dark .maplibregl-ctrl-attrib { background: rgb(15 23 41 / 0.8) !important; color: #93a3be; }
+.dark .maplibregl-ctrl-attrib a { color: #cbd5e4; }
+.dark .maplibregl-ctrl-attrib-button { filter: invert(1); }
+/* MapLibre's stylesheet loads after this one: without the extra specificity "Data from" stays black on dark */
+.dark .maplibregl-ctrl.maplibregl-ctrl-attrib, .dark .maplibregl-ctrl-attrib-inner { color: #93a3be; }
+
+/* first-screen notice (components/Notice.tsx): hidden before the first paint once dismissed */
+[data-aviso="visto"] .aviso { display: none; }

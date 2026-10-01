@@ -1,0 +1,49 @@
+# Lint, typecheck, test, rebuild the data offline and build the static site. No secrets, no API keys, no paid calls.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v6 # version from "packageManager" in package.json
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm lint
+
+      - run: pnpm typecheck # web runs `next typegen` first
+
+      - run: pnpm test # pipeline + scorer-jev unit tests, web simulation regression
+
+      - name: Rebuild the data from the committed snapshot (offline, no key)
+        run: pnpm data
+
+      - name: Committed data must match what `pnpm data` produces
+        run: git diff --exit-code --stat -- data/out web/public/data
+
+      - name: Scorer without a key prints the request and the cost estimate, sends nothing
+        run: pnpm --filter @semaforos/scorer-jev run dry-run > /dev/null
+
+      - run: pnpm build
